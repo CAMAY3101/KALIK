@@ -1,25 +1,45 @@
-from ast import Num
+"""
+Author: Maximiliano Martínez Márquez
+Project: Sentiment Analysis For CryptoCurrency Forecasting
+app: Data Transformation
+"""
+
+# DataFrame manipulation
 import pandas as pd
+# Split DataFrame
 import numpy as np
+# Get before and after Epochs for search submissions function 
 import datetime
+# Wrapper for the Pushshift API used to retrieve Reddit submissions
 from pmaw import PushshiftAPI
 
+"""
+Obtain data from various subreddits and generate a csv file.
+"""
+
 def main():
+    # List of subreddits used to retrieve submissions
     subreddits = ['ethereum']# ,'ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
     df = search(subreddits)
-    creat_csv(df)
+    create_csv(df)
 
-    
+
+# Filter for submission search
 def sub_filter(item):
     return item['score'] > 100 #and item['num_comments'] > 100
 
 
 def search(subreddits):
     api = PushshiftAPI(num_workers=40,)
+
+    # Dicionary for submission results
     subreddits_posts = dict()
+
+    # Dates to epoch
     after_time = int(datetime.datetime(2019, 10, 1, 0, 0).timestamp())
     before_time = int(datetime.datetime(2022, 9, 30, 0, 0).timestamp())
 
+    # Submission search
     print("-------------start-------------")
     for subreddit in subreddits:
         print("Beginning search for", subreddit)
@@ -41,8 +61,10 @@ def search(subreddits):
     return df
     
 
-def creat_csv(df):
+def create_csv(df):
+    # Split DataFrame
     result = np.array_split(df, 2)
+    # Generate csv files
     result[0].to_csv(r'C:\Users\SR118\Desktop\Reddit_1_t.csv', index = False, header=True)
     result[1].to_csv(r'C:\Users\SR118\Desktop\Reddit_2_t.csv', index = False, header=True)
 
