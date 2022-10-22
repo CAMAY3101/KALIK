@@ -15,18 +15,20 @@ from pmaw import PushshiftAPI
 
 """
 Obtain data from various subreddits and generate a csv file.
+How to run file:
+python picking_reddit.py
 """
 
 def main():
     # List of subreddits used to retrieve submissions
-    subreddits = ['ethereum']# ,'ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
+    subreddits = ['ethereum','ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
     df = search(subreddits)
     create_csv(df)
 
 
 # Filter for submission search
 def sub_filter(item):
-    return item['score'] > 100 #and item['num_comments'] > 100
+    return item['score'] > 50 #and item['num_comments'] > 100
 
 
 def search(subreddits):
@@ -63,10 +65,12 @@ def search(subreddits):
 
 def create_csv(df):
     # Split DataFrame
-    result = np.array_split(df, 2)
+    result = np.array_split(df, 4)
     # Generate csv files
-    result[0].to_csv(r'C:\Users\SR118\Desktop\Reddit_1_t.csv', index = False, header=True)
-    result[1].to_csv(r'C:\Users\SR118\Desktop\Reddit_2_t.csv', index = False, header=True)
+    result[0].to_csv(r'./datasets/Reddit_1.csv', index = False, header=True)
+    result[1].to_csv(r'./datasets/Reddit_2.csv', index = False, header=True)
+    result[2].to_csv(r'./datasets/Reddit_3.csv', index = False, header=True)
+    result[3].to_csv(r'./datasets/Reddit_4.csv', index = False, header=True)
 
 
 if __name__ == "__main__":
