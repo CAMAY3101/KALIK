@@ -51,8 +51,8 @@ coll_ETH_USD_Yahoo = db.ETH_USD_Yahoo
 
 #NOTE: If you want to insert data, you must delete the collection first. Run the following code just once.
 
-coll_ETH_BTC_BINANCE.insert_many(json_ETH_BTC_BINANCE)
+'''coll_ETH_BTC_BINANCE.insert_many(json_ETH_BTC_BINANCE)
 coll_ETH_USDT_BINANCE.insert_many(json_ETH_USDT_BINANCE)
 coll_BNB_ETH_BINANCE.insert_many(json_BNB_ETH_BINANCE)
 coll_XRP_ETH_BINANCE.insert_many(json_XRP_ETH_BINANCE)
-coll_ETH_USD_Yahoo.insert_many(json_ETH_USD_Yahoo)
+coll_ETH_USD_Yahoo.insert_many(json_ETH_USD_Yahoo)'''
