@@ -39,14 +39,12 @@ def search(subreddit, before, after):
     s = api.search_submissions(subreddit=subreddit,
             filter=['title','selftext','created_utc','subreddit','score','num_comments'],#,'full_link'],
             after=after,
-            before=before,                                                         
-                                            )
+            before=before,)
     print("Ended search for", subreddit)
     print("--------------end--------------")
 
     return pd.DataFrame(s)
     
-
 
 if __name__ == "__main__":
     main()
