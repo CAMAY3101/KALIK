@@ -24,7 +24,7 @@ python picking_reddit.py
 
 def main():
     # List of subreddits used to retrieve submissions
-    subreddits = ['ethereum','ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
+    subreddits = ['ethereum',]#'ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
 
     date_range = pd.date_range(start="2019-10-01", end="2022-09-30")
     date_range_list = []
@@ -33,35 +33,32 @@ def main():
         y, m, d = list(map(int, str(day).split(' ')[0].split('-')))
         date_range_list.append(int(datetime.datetime(y, m, d, 0, 0).timestamp()))
     
+    df = pd.DataFrame()
     num_post_list = []
-    
+
     for subreddit in subreddits:
         print("-------------start-------------")
         print("Beginning search for", subreddit)
         for day in date_range_list:
-            print("day", day)
-            num_post_list.append(len(search(subreddit, day, day+86400)))
-            print("end", day)
-        print("Ended search for", subreddit)
-        print("--------------end--------------")
+            r = search(subreddit, day, day+86400)
+            if len(r) == 0:
+                r = search(subreddit, day, day+86400)
+            num_post_list.append(r)
+            df = pd.concat([df, pd.DataFrame(r)])
 
-    df = pd.DataFrame(data={"num_of_sub": num_post_list})
-    df.to_csv(r'./datasets/Reddit_sub.csv', sep=',',index=False)
-    
-    #print(int(datetime.datetime(2019, 10, 1, 0, 0).timestamp()))
-    #print(int(datetime.datetime(2019, 10, 2, 0, 0).timestamp()))
-    #print(len(search('ethereum', date_range_list[0], date_range_list[1])))
+    df = pd.DataFrame(data={"num_of_post": num_post_list})
+    df.to_csv(r'num_post_day.csv', sep=',',index=False)
     
 def search(subreddit, after, before):
-    api = PushshiftAPI(num_workers=40,shards_down_behavior=None,)
+    api = PushshiftAPI(num_workers=40,shards_down_behavior=None,rate_limit=30,)
 
     # Submission search
     submissions = api.search_submissions(subreddit=subreddit,
-            filter=['title','selftext','created_utc','subreddit','score','num_comments'],#,'full_link'],
+            filter=[],
             after=after,
             before=before,)
-    
-    return submissions
+
+    return len(submissions)
     
 
 if __name__ == "__main__":
