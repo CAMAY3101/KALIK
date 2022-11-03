@@ -33,7 +33,7 @@ Consideraciones:
 
 def main():
     # List of subreddits used to retrieve submissions
-    subreddits = ['ethereum',] #Change subreddit here
+    subreddits = ['CryptoCurrency',] #Change subreddit here
     #'ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
 
     date_range = pd.date_range(start="2019-10-01", end="2022-09-30")
@@ -62,7 +62,7 @@ def main():
         print("Ended search for", subreddit)
         print("--------------end--------------")
     finish = time.perf_counter()
-    df.to_csv(r'reddit_day_10.csv', sep=',',index=False) # Change name of csv file
+    df.to_csv(r'cryptocurrency_day_10.csv', sep=',',index=False) # Change name of csv file
     print(f"Program finished in {finish-start} seconds")
     
 def search(subreddit, after, before):
