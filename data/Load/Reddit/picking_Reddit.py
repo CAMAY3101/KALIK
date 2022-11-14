@@ -80,7 +80,6 @@ def get_top3_comment(reddit, sumbission_id):
             time.sleep((2 ** attempts) + random.random())
     return sub.comments[:3]
 
-
     
 
 """
