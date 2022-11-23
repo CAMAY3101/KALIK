@@ -4,31 +4,34 @@ import time
 import praw
 import pandas as pd
 import requests
+import os
+from dotenv import load_dotenv
 from ratelimit import limits, sleep_and_retry
 
+# Looks for the .env file in the current directory
+load_dotenv()
+
+# Get credentials from .env file
+CLIENT_ID = os.getenv("CLIENT_ID")
+CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+USERNAME = os.getenv("USERNAME")
+PASSWORD = os.getenv("PASSWORD")
+USER_AGENT = os.getenv("USER_AGENT")
+
+# Used for ratelimiting
 ONE_MINUTE = 60
 MAX_CALLS_PER_MINUTE = 60
 
 def main():
     start_time = time.perf_counter()
 
-    '''
-    cambiar el nombre del archivo en la linea de abajo
-    y no olvidar tambien cambiarla en la linea 32
-    '''
     df = csv_to_df(r"Crypto_Currency_News.csv")
     df["id"] = df["id"].apply(lambda x: 't3_' + x)
-    '''
-    Si la columna de 'created_utc' no tiene el formato correcto 
-    descomentar la linea de abajo
-    '''
+
     #df = unix_to_date(df, "created_utc")
 
     df = append_comments(df, get_praw())
-    '''
-    tambien cambiar el nobmre del archivo
-    de preferencia agregar '(nombre del subreddit)_comments' para distinguir
-    '''
+
     df.to_csv(r'Crypto_Currency_News_comments.csv', sep=',',index=False) 
 
     finish_time = time.perf_counter()
@@ -36,20 +39,20 @@ def main():
     
 
 """
-returns reddit object to get top comment
+Returns reddit object for api calls
 """
 def get_praw():
     reddit = praw.Reddit(
-    client_id = "1s9rwR-kIsBTTh-nZBO7JA",
-    client_secret = "HhrjDoYqItKREVXCWB7OzaRcAvoCwg",
-    username = "Longjumping_Day337",
-    password = "kalik123",
-    user_agent = "my agent",
+    client_id = CLIENT_ID,
+    client_secret = CLIENT_SECRET,
+    username = USERNAME,
+    password = PASSWORD,
+    user_agent = USER_AGENT,
     )
     return reddit
 
 """
-returns top comment for sumbission id
+Returns top comment for sumbission id
 
 example: get_top_comment("dbruyz")
 
@@ -147,7 +150,9 @@ def get_submissions(subreddits, date_range_list):
                 d += 1
                 print(d, l)
     return df
-
+"""
+Obtains reddit name and reddit id 
+"""
 def get_post_id(subreddits, after, before):
     df = pd.DataFrame()
     for subreddit in subreddits:
@@ -178,8 +183,9 @@ def csv_to_df(file):
     df = pd.read_csv(file)
     return df
 
-# @sleep_and_retry
-# @limits(calls=MAX_CALLS_PER_MINUTE, period=ONE_MINUTE)
+"""
+Searches and appends comments to dataframe using id found in dataframe
+"""
 def append_comments(df, reddit):
     # from df get column of post id
     # for each post id get top 3 comments
@@ -216,33 +222,5 @@ def unix_to_date(df, column):
     return df
 
 
-
 if __name__ == '__main__':
     main()
-
-
-"""
-url_list = ['https://api.pushshift.io/reddit/search/submission/?subreddit=wallstreetbets&sort=desc&sort_type=score&size=10&after=7d&fields=score,title', 
-            'https://api.pushshift.io/reddit/search/submission/?q=wallstreetbets']
-
-def download_file(url, file_name):
-    try:
-        html = requests.get(url, stream=True)
-        #js = json.loads(html.json())
-        #print(json.dumps(js, ident=4))
-        open(f'{file_name}.json', 'wb').write(html.content)
-        return html.status_code
-    except requests.exceptions.RequestException as e:
-        return e
-
-def runner():
-    threads= []
-    with ThreadPoolExecutor(max_workers=20) as executor:
-        for url in url_list:
-            file_name = uuid.uuid1()
-            threads.append(executor.submit(download_file, url, file_name))
-            
-        for task in as_completed(threads):
-            print(task.result()) 
-
-"""

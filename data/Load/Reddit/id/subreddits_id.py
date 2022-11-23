@@ -12,13 +12,6 @@ import datetime
 import time
 from pmaw import PushshiftAPI
 
-"""
-Como ejecutar el programa
-(In Kalik folder directory)
-cd data/Load/Reddit_picking
-python post_day_10.py
-"""
-
 def main():
     #subreddits = ['ethereum','ethtrader', 'ethfinance' 'AllCryptoBets', 'CryptoCurrency', 'Crypto_Currency_News', 'CryptoCurrencies', 'CryptoMarkets']
     subreddits = ['AllCryptoBets']
@@ -42,7 +35,9 @@ def main():
     print(f"Program finished in {finish_time-start_time} seconds")
     
     
-
+"""
+Generate call to pushshift api for reddit submissions ids
+"""
 def get_data(**kargs):
     url = "https://api.pushshift.io/reddit/search/submission/"
     params = {
@@ -66,6 +61,9 @@ def get_data(**kargs):
             print(f"Retrying... {attempts}/{max_attempts}")
             time.sleep((2 ** attempts) + random.random())
 
+"""
+Function to make a call for each day in the date range
+"""
 def get_post_id(subreddits, date_range_list):
     df = pd.DataFrame()
     l = len(date_range_list)
@@ -83,6 +81,9 @@ def get_post_id(subreddits, date_range_list):
             print(f"Subreddit: {subreddit} - {d}/{l}")
     return df
 
+"""
+Function to get day data range
+"""
 def get_date_range(start, end):
     date_range = pd.date_range(start=start, end=end, freq="5D")
     date_range_list = []
