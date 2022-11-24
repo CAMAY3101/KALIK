@@ -1,0 +1,33 @@
+# n
+First trained model. 
+Trained for 50 epochs ~ 3 hours. 
+Loss increased throughout the frist epochs, going from 0.0053[...] values to 0.0063[...] from epoch 13 onwards. 
+Found error in the way stock_data and target was split (cutted an extra day).
+Ran a test on the model previous to this training cycle, could have afected the starting weights.
+
+# 23_01
+Fixed stock_data and target split.
+Removed pre-test, data and models went directly to training after loading.
+Ran for 10 epochs ~ 30 mins.
+Un-normalized output to compare against the last day of data. Was similar but a little far away, a small but unnatural difference.
+Still problems where loss increases throughout the epochs.
+
+# 23_02
+Added array to store the predicted values of each step in an epoch.
+Used it to graph predictions vs actual values for 1095 days, for each of the 9 variables.
+Looks good, predicted values tend to follow close to actual ones.
+Only ran for 1 epoch to test the plotting.
+
+# 23_03
+After the plotting and research, realized that the Loss increase isn't necessarilly something bad.
+Given that this is not a classification or normal prediction problem, error doesn't represent accuracy.
+It can increase at the same time that the model becomes better at time series predictions.
+Using all we have ran a last good 15 epochs with the plotting and all the fixes.
+
+# 23_04
+1 epoch model plot is looking good against 15 epoch one, will try once more a 1 epoch model.
+Got some nice plots in this one.
+
+This is the last training step before going to testing.
+In testing it is planned to remove more days (n) from the data_stock training values,
+Then make the model predict the n amount of following missing days, using the ouput as input for next one.
