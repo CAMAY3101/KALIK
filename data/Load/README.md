@@ -120,7 +120,7 @@ get_post_id(subreddits, date_range_list)
 
 Utiliza la función de get_data para obtener un dataframe que contiene el nombre del subreddit y el identificador de un post.
 
-```http
+```
 get_date_range(start, end)
 ````
 | Parameter | Type     | Description |
