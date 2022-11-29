@@ -12,13 +12,13 @@
 
 ### picking_Reddit.py
 
-```http
+```
   get_praw()
 ```
 Devuelve una instancia de la clase Reddit para poder utilizar cualquier función de la librería PRAW.
 
 
-```http
+```
   get_top3_comment(reddit, submission_id)
 ```
 | Parameter | Type     |
@@ -28,7 +28,7 @@ Devuelve una instancia de la clase Reddit para poder utilizar cualquier función
 
 Devuelve los primeros tres comentarios con el mayor número de “upvotes” o “me gusta” utilizando la instancia de la clase Reddit y el número de submission Id. 
 
-```http
+```
 get_data(**kargs)
 ```
 | Parameter | Type     |
@@ -38,7 +38,7 @@ get_data(**kargs)
 Realiza una llamada a la api de pushshift utilizando los elementos del diccionario en donde si la llave “tag” es igual a “get_submissions” devuelve un json con las publicaciones y si el “tag” es igual a “get_post_id” se devuelve un json con los identificadores de las publicaciones.
 
 
-```http
+```
 get_submissions(subreddits, date_range_list)
 ```
 | Parameter | Type     | Description |
@@ -49,7 +49,7 @@ get_submissions(subreddits, date_range_list)
 Utiliza la función de get_data para obtener los primeros diez posts en un dia para cada subreddit, los une en un solo data frame y luego los devuelve.
 
 
-```http
+```
 get_post_id(subreddits, after, before)
 ```
 | Parameter | Type     | Description |
@@ -60,7 +60,7 @@ get_post_id(subreddits, after, before)
 
 Utiliza la función de get_data para obtener un dataframe que contiene el nombre del subreddit y el identificador de un post.
 
-```http
+```
 get_date_range(start, end)
 ```
 | Parameter | Type     | Description |
@@ -70,7 +70,7 @@ get_date_range(start, end)
 
 Devuelve un lista que contiene todas las marcas de tiempo unix dentro de start y end.
 
-```http
+```
 csv_to_df(file)
 ```
 | Parameter | Type     | Description |
@@ -79,7 +79,7 @@ csv_to_df(file)
 
 Utiliza la función read_csv de pandas para crear un dataframe a partir de un documento tipo csv y lo devuelve.
 
-```http
+```
 append_comments(df, reddit)
 ```
 | Parameter | Type     |
@@ -89,7 +89,7 @@ append_comments(df, reddit)
 
 Utiliza el objeto de reddit para hacer una llamada al api de Reddit, obtener los primeros tres comentarios de un post utilizando la columna de “id” de df, los agrega al dataframe y luego lo devuelve.
 
-```http
+```
 unix_to_date(df, column)
 ```
 | Parameter | Type     |
@@ -101,7 +101,7 @@ Convierte la columna en df a formato año-mes-día y devuelve el df
 
 ## subreddits_id.py
 
-```http
+```
 get_data(**kargs)
 ````
 | Parameter | Type     |
@@ -110,7 +110,7 @@ get_data(**kargs)
 
 Realiza una llamada a la api de pushshift utilizando los elementos del diccionario en donde devuelve un json con los identificadores de las publicaciones.
 
-```http
+```
 get_post_id(subreddits, date_range_list)
 ````
 | Parameter | Type     | Description |
