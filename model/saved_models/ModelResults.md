@@ -10,8 +10,21 @@
 - num_trades_XRP:  12662.067767368158
 
 ---
+# Adjusting Model
+---
 ## Model: Senti_n
-
+Predictions within 0.3 standard deviations of actual value:
+[904, 532, 588, 904, 472, 813, 661, 922, 638]
+- adj_close: 82.56%
+- volume: 48.58%
+- num_trades_USDT: 53.70%
+- close_BTC: 82.56%
+- num_trades_BTC: 43.11%
+- close_BNB: 74.25%
+- num_trades_BNB: 60.37%
+- close_XRP: 84.20%
+- num_trades_XRP: 58.26%
+Average: 65.29%
 
 ---
 ## Model: Senti_23_01
@@ -72,3 +85,37 @@ Predictions within 0.3 standard deviations of actual value:
 - close_XRP: 90.78%
 - num_trades_XRP: 63.11%
 Average: 70.16%
+
+---
+## Model: Senti_28_01
+Predictions within 0.3 standard deviations of actual value:
+[788, 482, 549, 857, 459, 632, 727, 823, 723]
+- adj_close: 71.96%
+- volume: 44.02%
+- num_trades_USDT: 50.14%
+- close_BTC: 78.26%
+- num_trades_BTC: 41.92%
+- close_BNB: 57.72%
+- num_trades_BNB: 66.39%
+- close_XRP: 75.16%
+- num_trades_XRP: 66.03%
+Average: 61.29%
+
+---
+## Model: Senti_28_02
+Predictions within 0.3 standard deviations of actual value:
+[991, 550, 603, 1025, 475, 879, 632, 1031, 584]
+- adj_close: 90.50%
+- volume: 50.23%
+- num_trades_USDT: 55.07%
+- close_BTC: 93.61%
+- num_trades_BTC: 43.38%
+- close_BNB: 80.27%
+- num_trades_BNB: 57.72%
+- close_XRP: 94.16%
+- num_trades_XRP: 53.33%
+Average: 68.70%
+
+---
+# Train Test Model
+---
