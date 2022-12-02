@@ -16,7 +16,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_BNB: 71.43%
 - close_XRP: 100.00%
 - **Average Closes: 89.29%**  
-[--> Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_01)
+[-> Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_01)
 
 
 [Model 01_02 - CryptoCurrencies](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_02--stock_01_02---cryptocurrencies)  
