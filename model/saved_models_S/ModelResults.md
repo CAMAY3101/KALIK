@@ -7,7 +7,7 @@ These models are good at predicting the close prices in short term, trend to be 
 # Summary of Final Models:
 For more detail on each, see the rest of the file.
 
-First week Forecasts within 0.3 standard deviations of actual value, refers to how many (%) of the forcasted values of the first week are at 0.3 or less estandar deviations from the real value.
+First week Forecasts within 0.3 standard deviations of actual value, refers to how many (%) of the forcasted values of the first week are at 0.3 or less standar deviations from the real value.
 
 [Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_01--stock_01_01---crypto_currency_news)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
