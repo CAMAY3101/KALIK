@@ -17,6 +17,7 @@ These models are good at predicting the close prices in longer time range foreca
 
 ---
 # SentiL_30_01 | StockL_30_01 - Crypto_Currency_News
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_01)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [250, 159, 153, 246, 145, 236, 196, 247, 207]  
 out of 250 forecasted values summed across the 5 batches
@@ -49,6 +50,7 @@ Average Closes: 100.00%
 
 ---
 # SentiL_30_02 | StockL_30_02 - CryptoCurrencies
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_02)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [219, 121, 137, 172, 111, 169, 147, 224, 162]  
 out of 250 forecasted values summed across the 5 batches
@@ -81,6 +83,7 @@ Average Closes: 46.43%
 
 ---
 # SentiL_30_03 | StockL_30_03 - CryptoCurrency
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_03)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [210, 126, 128, 219, 114, 210, 175, 234, 168]  
 out of 250 forecasted values summed across the 5 batches
@@ -113,6 +116,7 @@ Average Closes: 42.86%
 
 ---
 # SentiL_30_04 | StockL_30_04 - Cryptomarkets
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_04)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [213, 133, 126, 216, 117, 196, 157, 243, 179]  
 out of 250 forecasted values summed across the 5 batches
@@ -145,6 +149,7 @@ Average Closes: 57.14%
 
 ---
 # SentiL_30_05 | StockL_30_05 - eth
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_05)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [185, 126, 132, 205, 113, 165, 139, 225, 159]  
 out of 250 forecasted values summed across the 5 batches
@@ -177,6 +182,7 @@ Average Closes: 50.00%
 
 ---
 # SentiL_30_06 | StockL_30_06 - ethfinance
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_06)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [215, 124, 136, 219, 109, 191, 167, 243, 165]  
 out of 250 forecasted values summed across the 5 batches
@@ -209,6 +215,7 @@ Average Closes: 39.29%
 
 ---
 # SentiL_30_07 | StockL_30_07 - ethtrader
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/long_focused/30_07)
 ### Forecasted values within 0.3 standard deviations of actual value:
 [221, 127, 135, 218, 117, 214, 175, 234, 187]  
 out of 250 forecasted values summed across the 5 batches
