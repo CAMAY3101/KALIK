@@ -11,7 +11,6 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 
 [Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_01--stock_01_01---crypto_currency_news)  
 [→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_01)
-
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 85.71%
@@ -20,58 +19,58 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - **Average Closes: 89.29%**  
 
 [Model 01_02 - CryptoCurrencies](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_02--stock_01_02---cryptocurrencies)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_02)
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 85.71%**
 - close_BTC: 71.43%
 - close_BNB: 28.57%
 - close_XRP: 100.00%
 - **Average Closes: 71.43%**   
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_02)
 
 [Model 01_03 - CryptoCurrency](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_03--stock_01_03---cryptocurrency)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_03)
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 85.71%**
 - close_BTC: 100.00%
 - close_BNB: 71.43%
 - close_XRP: 100.00%
 - **Average Closes: 89.29%**  
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_03)
 
 [Model 01_04 - Cryptomarkets](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_04--stock_01_04---cryptomarkets)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_04)
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 57.14%
 - close_BNB: 42.86%
 - close_XRP: 100.00%
 - **Average Closes: 75.00%**  
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_04)
 
 [Model 01_05 - eth](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_05--stock_01_05---eth)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_05)
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 100.00%
 - close_BNB: 28.57%
 - close_XRP: 71.43%
 - **Average Closes: 75.00%**  
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_05)
 
 [Model 01_06 - ethfinance](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_06--stock_01_06---ethfinance)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_06)
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 85.71%**
 - close_BTC: 85.71%
 - close_BNB: 71.43%
 - close_XRP: 100.00%
 - **Average Closes: 85.71%**  
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_06)
 
 [Model 01_07 - ethtrader](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_07--stock_01_07---ethtrader)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_07)
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 91.03%**
 - close_BTC: 92.32%
 - close_BNB: 78.82%
 - close_XRP: 90.10%
 - **Average Closes: 88.07%**   
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_07)
 
 ---
 ### Standard deviations for each column (unnormalized):
