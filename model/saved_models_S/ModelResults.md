@@ -27,9 +27,9 @@ This model is good at predicting the close prices for the next day. After the la
 - close_BNB: 79.28%
 - num_trades_BNB: 55.04%
 - close_XRP: 91.12%
-- num_trades_XRP: 55.78%
-- Average All: 68.04%
-- Average Closes: 88.74%
+- num_trades_XRP: 55.78%  
+Average All: 68.04%  
+Average Closes: 88.74%  
 
 #### First week Forecasts within 0.3 standard deviations of actual value:
 [7, 4, 4, 6, 1, 5, 6, 7, 0] out of 7
@@ -41,9 +41,9 @@ This model is good at predicting the close prices for the next day. After the la
 - close_BNB: 71.43%
 - num_trades_BNB: 85.71%
 - close_XRP: 100.00%
-- num_trades_XRP: 0.00%
-- Average All: 63.49%
-- Average Closes: 89.29%
+- num_trades_XRP: 0.00%  
+Average All: 63.49%  
+Average Closes: 89.29%  
 
 #### Two week Forecasts within 0.3 standard deviations of actual value:
 [8, 8, 9, 6, 1, 5, 6, 14, 1] out of 14
@@ -55,34 +55,27 @@ This model is good at predicting the close prices for the next day. After the la
 - close_BNB: 35.71%
 - num_trades_BNB: 42.86%
 - close_XRP: 100.00%
-- num_trades_XRP: 7.14%
-- Average All: 46.03%
-- Average Closes: 58.93%
+- num_trades_XRP: 7.14%  
+Average All: 46.03%  
+Average Closes: 58.93%  
 
 #### Forecast Results vs Real Values in adj_close ETH-USD:
-Last prediction (in training): 1639.33791
+Last prediction (in training): 1639.33791  
+Start: 1639.33791, First week Forecast: 1606.15572, 1553.88411, 1485.93979, 1403.21782, 1307.14190, 1192.87834, 1066.44509  
+Start: 1432.44775, First week Real:     1469.74170, 1335.32910, 1377.54138, 1324.38818, 1252.60779, 1327.68018, 1328.25952  
+Start Difference: 206.89016  
+Next Day Forecast Difference to Real Value: 136.41402  
+Next Day Difference in Standard Deviations: 0.10199  
+Next Day Forecast:   DOWN -33.18219  
+Next Day Real:       UP   37.29394  
 
-Start: 1639.33791, First week Forecast: 1606.15572, 1553.88411, 1485.93979, 1403.21782, 1307.14190, 1192.87834, 1066.44509
-
-Start: 1432.44775, First week Real:     1469.74170, 1335.32910, 1377.54138, 1324.38818, 1252.60779, 1327.68018, 1328.25952
-
-Start Difference: 206.89016
-
-Next Day Forecast Difference to Real Value: 136.41402
-
-Next Day Difference in Standard Deviations: 0.10199
-
-Next Day Forecast:   DOWN -33.18219
-
-Next Day Real:       UP   37.29394
-<br>
-First Week Forecast Difference to Real Value: -261.81443
-First Week Difference in Standard Deviations: -0.19575
-First Week Forecast: DOWN -572.89282
-First Week Real:     DOWN -104.18823
-
-Two Week Forecast:   DOWN -1616.73481
-Two Week Real:       DOWN -104.46912
+First Week Forecast Difference to Real Value: -261.81443  
+First Week Difference in Standard Deviations: -0.19575  
+First Week Forecast: DOWN -572.89282  
+First Week Real:     DOWN -104.18823  
+ 
+Two Week Forecast:   DOWN -1616.73481  
+Two Week Real:       DOWN -104.46912  
 
 #### Forecast Results vs Real Values in close_BTC ETH-BTC:
 Last prediction (in training): 0.07434
