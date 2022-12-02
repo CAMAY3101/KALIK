@@ -40,6 +40,10 @@ pip install tqdm
 
 ```
 
+# Anexos
+
+[Documentación](https://docs.google.com/document/d/15ELi4_ZX1yuAhn59651vpaJqYwFE1AP9D251CufG0JU/edit?usp=sharing)
+
 # LICENSE (EN)
 This project is subject to the **KALIK Software License Agreement**. All software, documentation, and other materials in this repository is copyrighted by the Author(s). 
 
