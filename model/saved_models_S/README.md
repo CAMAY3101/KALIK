@@ -9,7 +9,7 @@ For more detail on each, see the rest of the file.
 
 First week Forecasts within 0.3 standard deviations of actual value, refers to how many (%) of the forcasted values of the first week are at 0.3 or less standar deviations from the real value.
 
-[Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_01--stock_01_01---crypto_currency_news)  
+[Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_01--stock_01_01---crypto_currency_news)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 85.71%
@@ -17,7 +17,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_XRP: 100.00%
 - **Average Closes: 89.29%**
 
-[Model 01_02 - CryptoCurrencies](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_02--stock_01_02---cryptocurrencies)  
+[Model 01_02 - CryptoCurrencies](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_02--stock_01_02---cryptocurrencies)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 85.71%**
 - close_BTC: 71.43%
@@ -25,7 +25,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_XRP: 100.00%
 - **Average Closes: 71.43%**
 
-[Model 01_03 - CryptoCurrency](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_03--stock_01_03---cryptocurrency)  
+[Model 01_03 - CryptoCurrency](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_03--stock_01_03---cryptocurrency)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 85.71%**
 - close_BTC: 100.00%
@@ -33,7 +33,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_XRP: 100.00%
 - **Average Closes: 89.29%**
 
-[Model 01_04 - Cryptomarkets](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_04--stock_01_04---cryptomarkets)  
+[Model 01_04 - Cryptomarkets](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_04--stock_01_04---cryptomarkets)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 57.14%
@@ -41,7 +41,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_XRP: 100.00%
 - **Average Closes: 75.00%**
 
-[Model 01_05 - eth](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_05--stock_01_05---eth)  
+[Model 01_05 - eth](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_05--stock_01_05---eth)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 100.00%
@@ -49,7 +49,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_XRP: 71.43%
 - **Average Closes: 75.00%**
 
-[Model 01_06 - ethfinance](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_06--stock_01_06---ethfinance)  
+[Model 01_06 - ethfinance](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_06--stock_01_06---ethfinance)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 85.71%**
 - close_BTC: 85.71%
@@ -57,7 +57,7 @@ First week Forecasts within 0.3 standard deviations of actual value, refers to h
 - close_XRP: 100.00%
 - **Average Closes: 85.71%**
 
-[Model 01_07 - ethtrader](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_07--stock_01_07---ethtrader)  
+[Model 01_07 - ethtrader](https://github.com/CAMAY3101/KALIK/blob/main/model/saved_models_S/ModelResults.md#senti_01_07--stock_01_07---ethtrader)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 91.03%**
 - close_BTC: 92.32%
