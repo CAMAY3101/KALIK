@@ -40,6 +40,18 @@ pip install tqdm
 
 ```
 
+# Anexos
+
+[Documentación](https://docs.google.com/document/d/15ELi4_ZX1yuAhn59651vpaJqYwFE1AP9D251CufG0JU/edit?usp=sharing)
+
+# Correciones
+
+* Se diseño un documento para la metodología de trabajo a seguir
+* Se diseño un documento para documentar todas las actividades que se harían durante el proyecto
+* Se hicieron correcciones en la redacción de los requerimientos en el PRD document.
+* Se agregaron archivos Mark Down dentro del repositorio para documentar cada código y las carpetas
+
+
 # LICENSE (EN)
 This project is subject to the **KALIK Software License Agreement**. All software, documentation, and other materials in this repository is copyrighted by the Author(s). 
 
