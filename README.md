@@ -16,7 +16,7 @@ Modelo machine learning capaz de predecir el valor monetario al mercado de la cr
 | Programming Languages and Libraries     | Python 3.7 |
 
 
-# Installation
+# Instalación
 
 1) Clonar el repositorio en alguna carpeta local 
 
