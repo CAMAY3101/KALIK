@@ -10,13 +10,14 @@ For more detail on each, see the rest of the file.
 First week Forecasts within 0.3 standard deviations of actual value, refers to how many (%) of the forcasted values of the first week are at 0.3 or less standar deviations from the real value.
 
 [Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_01--stock_01_01---crypto_currency_news)  
+[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_01)
+
 #### First week Forecasts within 0.3 standard deviations of actual value:
 - **adj_close: 100.00%**
 - close_BTC: 85.71%
 - close_BNB: 71.43%
 - close_XRP: 100.00%
 - **Average Closes: 89.29%**  
-[→ Graphs](https://github.com/CAMAY3101/KALIK/tree/main/model/Result_Graphs/short_focused/01_01)
 
 [Model 01_02 - CryptoCurrencies](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#senti_01_02--stock_01_02---cryptocurrencies)  
 #### First week Forecasts within 0.3 standard deviations of actual value:
