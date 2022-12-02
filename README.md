@@ -36,6 +36,8 @@ pip install requests
 pip install datetime
 pip install -U python-dotenv
 pip install ratelimit
+pip install tqdm
+
 ```
 
 # LICENSE (EN)
