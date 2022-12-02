@@ -2,11 +2,11 @@
 - adj_close:       1337.4726991204095 *Main point of interest, ETH-USD listed on Yahoo Finance*
 - volume:          10211521929.269737
 - num_trades_USDT: 631839.7406452631
-- close_BTC:       0.022021368239816732 *Also important, ETH-BTC listed on Binance*
+- close_BTC:       0.022021368239816732 *Also very important, ETH-BTC listed on Binance*
 - num_trades_BTC:  132399.17157028607
-- close_BNB:       0.04479372888523323
+- close_BNB:       0.04479372888523323 *BNB-ETH listed on Binance*
 - num_trades_BNB:  32263.902864333828
-- close_XRP:       0.0004365633549043587
+- close_XRP:       0.0004365633549043587 *XRP-ETH listed on Binance*
 - num_trades_XRP:  12662.067767368158
 
 ---
