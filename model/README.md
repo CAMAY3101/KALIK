@@ -11,11 +11,11 @@ In this model we train in batches of 1, it is in timeseries form so gradients ar
 ### Saved Models
 Saved models can be found in the folder: saved_models_S/  
 ##### Best Models:
-- Model 01_01 - Crypto_Currency_News
+- [Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#model-01_01---crypto_currency_news)
   - Overal highest amount of first week price closes (ETH to USD, BTC, BNB, XRP) within 0.3 STDs of real value, falls of in second week.
-- Model 01_05 - eth
+- [Model 01_05 - eth](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#model-01_05---eth)
   - Good one week forecast with adj_close ETH-USD within 0.3 STDs of real value, two week close_BTC all within .3 STDs of real value.
-- Model 01_07 - ethtrader
+- [Model 01_07 - ethtrader](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_S#model-01_07---ethtrader)
   - Great one week and two week forecast accuracies, all adj_close ETH-USD within 0.3 STDs of real value.
 
 ### Results
@@ -29,7 +29,7 @@ In this model we train in batches of 256, and for each batch we make a stack for
 ### Saved Models
 Saved models can be found in the folder: saved_models_L/
 ##### Best Model:
-- Model 30_01 - Crypto_Currency_News
+- [Model 30_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/tree/main/model/saved_models_L#sentil_30_01--stockl_30_01---crypto_currency_news)
   - Trained for the longest time, best accuracy in training data, forecasts of 5 batches, and forecast of extra week.
 
 ### Results
