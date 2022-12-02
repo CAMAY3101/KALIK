@@ -1,9 +1,9 @@
 # Contenido
 
 * **picking_Reddit.py** es el código para extraer información de los blogs seleccionados en un periodo de tiempo.
-* **comments/** 
-* **id/**
-    * **subreddit.py**
+* **comments/** contiene todos los archivos con los comentarios de los reddits
+* **id/** tiene todos los Ids de los reddits
+    * **subreddit.py** obtiene los Id de los subreddits
 
 
 # API Reference
