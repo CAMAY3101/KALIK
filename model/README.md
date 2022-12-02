@@ -20,3 +20,13 @@ Saved models can be found in the folder: model/saved_models_L/
 ##### Results
 Results can be found in the file: model/saved_models_L/README.md
 Graphs can be found in the folder: model/Result_Graphs/long_focused/
+
+---
+### Indicators of Model Performance
+Our metric for evaluation is how many predictions are within 0.3 standard deviations of the real value. We aply this metric separately for in-training predictions and for forecasts.
+
+We receive in percentages this amount for each variable: adj_close, volume, num_trades_USDT, close_BTC, num_trades_BTC, close_BNB, num_trades_BNB, close_XRP, num_trades_XRP.
+
+It is to note that some variables are not important to predict, but we keep as they can be explicative for others in the model learning, being volume, num_trades_USDT, num_trades_BTC, num_trades_BNB and num_trades_XRP.
+
+Where we want high percentages are in the forecasts within 0.3 stds of the real value for: adj_close, close_BTC, close_BNB and close_XRP. With adj_close being the most important.
