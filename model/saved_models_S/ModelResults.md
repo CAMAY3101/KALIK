@@ -11,11 +11,15 @@
 
 ---
 # Train Test Model Results
-Previous versions to 30_03 of the model are deprecated. Production in the controlled environment starts at 01_01
+Previous versions to 01_01 of the model are deprecated. Production in controlled environment.
 
-This model is good at predicting the close prices for the next day. After the last day of training (in production the day of today) it makes a forecast that either goes up or down, which is an indicator of if the ETH-USD close (also ETH-BTC, BNB-ETH and XRP-ETH closes) is going to go up or down tomorrow.
+These models are good at predicting the close prices in short term, trend to be right in one week forecasts (UP or DOWN). After the last day of training it makes a forecast that either goes up or down, which is an indicator of if the ETH-USD close (also ETH-BTC, BNB-ETH and XRP-ETH closes) is going to go up or down the following days.
 
 ---
+# Summary of Final Models:
+For more detail on each, see the rest of the file.
+[Model 01_01 - Crypto_Currency_News](https://github.com/CAMAY3101/KALIK/blob/Model-Testing/model/saved_models_S/ModelResults.md#senti_01_01--stock_01_01---crypto_currency_news)
+
 # Senti_01_01 | Stock_01_01 - Crypto_Currency_News
 ### Predictions within 0.3 standard deviations of actual value:
 [986, 510, 571, 1009, 504, 857, 595, 985, 603] out of 1081
