@@ -1,15 +1,16 @@
 # n
 First trained model. 
 Trained for 50 epochs ~ 3 hours. 
-Loss increased throughout the frist epochs, going from 0.0053[...] values to 0.0063[...] from epoch 13 onwards. 
-Found error in the way stock_data and target was split (cutted an extra day).
+Loss increased between the frist epochs, going from 0.0053[...] values to 0.0063[...] from epoch 13 onwards.
+Nontheless, within each epoch Loss did decrease.
+Found error in the way stock_data and target was split (cutted a single extra day).
 Ran a test on the model previous to this training cycle, could have afected the starting weights.
 
 # 23_01
 Fixed stock_data and target split.
 Removed pre-test, data and models went directly to training after loading.
 Ran for 10 epochs ~ 30 mins.
-Un-normalized output to compare against the last day of data. Was similar but a little far away, a small but unnatural difference.
+Un-normalized output to compare against the last day of data. Was similar but a just little far away.
 Still problems where loss increases throughout the epochs.
 
 # 23_02
@@ -25,9 +26,40 @@ It can increase at the same time that the model becomes better at time series pr
 Using all we have ran a last good 15 epochs with the plotting and all the fixes.
 
 # 23_04
-1 epoch model plot is looking good against 15 epoch one, will try once more a 1 epoch model.
-Got some nice plots in this one.
+1 epoch model plot looked good against 15 epoch one, will try once more a 1 epoch model.
+Also defined metric to establish which model is better, using standar deviations.
+This model has the best results up to now.
 
-This is the last training step before going to testing.
-In testing it is planned to remove more days (n) from the data_stock training values,
-Then make the model predict the n amount of following missing days, using the ouput as input for next one.
+# 28_01
+Want to test the different learning rates before going to the last testing steps. Will do /10 and *10
+5 epochs with a /10 learning rate.
+Results got worse.
+
+# 28_02
+5 epochs with a *10 learning rate.
+Good results, comparable to 23_04. Had better predictions on ETH-USD and ETH-BTC closes.
+Will consider this as the new learning rate to use.
+
+
+# 28_03
+From now on we start using train-test splits to test the model forcasting a week of values
+Train predicting next day until -7 days of data, then forecast the rest of the days
+Made changes to make forecast loop work
+
+# 29_01
+Made changes to test different ways to forecast the data
+
+# 29_03
+Added Relu layer 
+Plot curves look smoother
+We determined that certain values are more important than others,
+ when predicting and when using our metric to determine which model is better.
+These are the close values: adj_close, close_BTC, close_BNB and close_XRP.
+Now we will only plot these and consider them highly in the metrics analysis.
+
+# 29_04
+Added Dropout layer
+Very very slight improvement in results.
+
+# 29_05
+Changed Relu layer to Celu, objectively better, also plots looks better.
