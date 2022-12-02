@@ -19,7 +19,7 @@ In this model we train in batches of 256, and for each batch we make a stack for
 #### Saved Models
 Saved models can be found in the folder: saved_models_L/
 #### Results
-Results can be found in the file: saved_models_L/README.md
+Results can be found in the file: saved_models_L/README.md  
 Graphs can be found in the folder: Result_Graphs/long_focused/
 
 ---
