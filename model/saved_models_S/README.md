@@ -126,6 +126,7 @@ Last prediction (in training): 1639.33791
 Start: 1639.33791, First week Forecast: 1606.15572, 1553.88411, 1485.93979, 1403.21782, 1307.14190, 1192.87834, 1066.44509  
 Start: 1432.44775, First week Real:     1469.74170, 1335.32910, 1377.54138, 1324.38818, 1252.60779, 1327.68018, 1328.25952  
 Start Difference: 206.89016  
+
 Next Day Forecast Difference to Real Value: 136.41402  
 Next Day Difference in Standard Deviations: 0.10199  
 Next Day Forecast:   DOWN -33.18219  
