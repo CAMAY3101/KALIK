@@ -6,7 +6,7 @@ Modelo machine learning capaz de predecir el valor monetario al mercado de la cr
 
 * Data: En esta carpeta se almacenan datos sin procesar y procesados, 
 
-* Model: En esta carpeta se almacena en un jupiter notebook para optimizar su ejecución y un mejor control de los resultados.
+* Model: En esta carpeta se almacena en dos jupiter notebooks los modelos de Deep Learning que realizan predicción y pronósticos de valores financieros de Ethereum a partir de el análisis de sentimiento en noticias.
 
 # Pre requisitos
 
