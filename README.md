@@ -2,6 +2,10 @@
 
 Modelo machine learning capaz de predecir el valor monetario al mercado de la criptomoneda Ethereum usando un indicador de sentimiento (el cual es obtenido de analizar blogs de noticias) e indicadores clave del mercado.
 
+# LICENSE (EN)
+This project is subject to the **KALIK Software License Agreement**. All software, documentation, and other materials in this repository is copyrighted by the Author(s). 
+
+See file **LICENSE.md** or go to https://github.com/CAMAY3101/KALIK/blob/main/LICENSE.md for full license details.
 
 # Contenido 
 
